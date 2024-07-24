@@ -1,0 +1,21 @@
+Parabéns! Você se inscreveu no programa Startando da Gerenciar Sistemas e agora dará início ao próximo passo para a construção de sua carreira profissional.
+Sobre o programa, o objetivo é oferecer aos participantes uma oportunidade de ampliar os conhecimentos em programação de sistemas, com o auxílio de uma mentoria profissional.
+O projeto é voltado para aqueles que já têm conhecimento de lógica de programação e da linguagem JavaScript.
+Para dar seguimento, apresentamos abaixo um pequeno teste para medir os conhecimentos adquiridos pelos participantes. Você terá 48 horas para realizar o teste e disponibilizar o link do repositório (GitHub). O prazo começa a contar a partir do recebimento deste e-mail.
+Caso ainda não esteja preparado para desenvolver o código-fonte do teste, não fique triste, haverá novas oportunidades. Não desanime; o universo da tecnologia é fantástico e está em franco crescimento.
+Resolva os desafios abaixo em JavaScript. Crie um arquivo para cada questão e salve em um repositório no GitHub. Quando finalizar, responda a este e-mail informando o link do seu repositório.
+
+1.	Desenvolva uma função do jogo “Pedra, Papel, Tesoura” em JavaScript. Neste desafio, você deve replicar o jogo tradicional, seguindo as regras do jogo. É esperado que a função receba dois parâmetros e retorne qual deles é o vencedor. Caso um dos parâmetros não esteja dentro da regra, você deve retornar um erro.
+ Exemplo: Se foi passado "Pedra" no parâmetro 1 e "Tesoura" no parâmetro 2, deve retornar: "Pedra ganha de Tesoura".
+
+2.	Nesta função, você deve percorrer o array e identificar todas as vogais presentes, adicionando-as em um novo array. O retorno da função deve ser todas as vogais identificadas e a quantidade. Use o array a seguir para o desafio:
+ “const wordsList = ["abacaxi", "alegria", "bicicleta", "ouro", "elefante"];”
+
+3.	Desenvolva uma função que percorra o array para identificar o maior e o menor número. O retorno da função deve ser o menor e o maior número. Fique à vontade para personalizar a mensagem de retorno.
+“const randomNumbers = [-1234, 5678, -987, 4321, -5555, 9999, -2345, 1111, -8888, 3456];”
+
+Boa sorte e sucesso!
+
+
+
+Problemas solucionados de forma sucinta e objetiva, sem estilização ou algo do tipo.

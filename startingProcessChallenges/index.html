@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+</head>
+<body>
+    <h1 id="mensagem"></h1>
+    <button onclick="iniciarJogo()">Pedra, Papel e Tesoura</button>
+    <button onclick="iniciarContador()">Contador de Vogais</button>
+    <button onclick="iniciarNumerais()">Identificador de Numeral</button>
+
+    <script>
+        function atualizarMensagem() {
+            const agora = new Date();
+            const hora = agora.getHours();
+            let mensagem;
+
+            if (hora >= 5 && hora < 12) {
+                mensagem = "Bom dia, vamos iniciar";
+            } else if (hora >= 12 && hora < 18) {
+                mensagem = "Boa tarde, vamos iniciar";
+            } else {
+                mensagem = "Boa noite, vamos iniciar";
+            }
+
+            document.getElementById("mensagem").innerText = mensagem;
+        }
+
+        function iniciarJogo() {
+            window.open('pedrapapeltesoura.html', '_blank');
+        }
+
+        function iniciarContador() {
+            window.open('vogais.html', '_blank');
+        }
+
+        function iniciarNumerais() {
+            window.open('numerais.html', '_blank');
+        }
+
+        atualizarMensagem();
+    </script>
+</body>
+</html>

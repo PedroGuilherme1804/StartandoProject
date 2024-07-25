@@ -35,27 +35,42 @@ function jogar(jogador1, jogador2) {
 
 function iniciarJogo() {
     let jogador1 = document.getElementById("jogador1").value;
-    let jogador2 = document.getElementById("jogador2").value;
+    let modoJogo = document.getElementById("modoJogo").value;
+    let jogador2;
+
+    if (modoJogo === 'computador') {
+        const opcoes = ['Pedra', 'Papel', 'Tesoura'];
+        jogador2 = opcoes[Math.floor(Math.random() * opcoes.length)];
+    } else {
+        jogador2 = document.getElementById("jogador2").value;
+    }
+
     let resultado = jogar(jogador1, jogador2);
     document.getElementById("resultado").innerHTML = `
         <p>${resultado}</p>
+        <p>Jogador 2 escolheu: ${jogador2}</p>
+        <button onclick="jogarNovamente()">Jogar Novamente</button>
         <button onclick="fecharJogo()">Fechar Jogo</button>
     `;
 }
-
-// <button onclick="jogarNovamente()">Jogar Novamente</button>
 
 function jogarNovamente() {
     document.getElementById("jogador1").value = "Pedra";
     document.getElementById("jogador2").value = "Pedra";
     document.getElementById("resultado").innerHTML = "";
+    document.getElementById("jogador2Div").style.display = "block";
+    document.getElementById("modoJogo").value = "jogador";
 }
 
 function fecharJogo() {
-    // Tenta fechar a aba/janela
     window.close();
 }
 
-//function fecharJogo() {
-//    window.location.href = 'about:blank';
-//}
+function atualizarModoJogo() {
+    let modoJogo = document.getElementById("modoJogo").value;
+    if (modoJogo === 'computador') {
+        document.getElementById("jogador2Div").style.display = "none";
+    } else {
+        document.getElementById("jogador2Div").style.display = "block";
+    }
+}

@@ -7,16 +7,23 @@
 <body>
     <h1>Escolha suas opções</h1>
     <div>
-        <label for="jogador1">Jogador 1:</label>
-        <select id="jogador1">
+        <label for="modoJogo">Modo de Jogo:</label>
+        <select id="modoJogo" onchange="atualizarModoJogo()">
+            <option value="jogador">Contra Jogador</option>
+            <option value="computador">Contra Computador</option>
+        </select>
+    </div>
+    <div id="jogador2Div">
+        <label for="jogador2">Jogador 2:</label>
+        <select id="jogador2">
             <option value="Pedra">Pedra</option>
             <option value="Papel">Papel</option>
             <option value="Tesoura">Tesoura</option>
         </select>
     </div>
     <div>
-        <label for="jogador2">Jogador 2:</label>
-        <select id="jogador2">
+        <label for="jogador1">Jogador 1:</label>
+        <select id="jogador1">
             <option value="Pedra">Pedra</option>
             <option value="Papel">Papel</option>
             <option value="Tesoura">Tesoura</option>
